@@ -1,0 +1,43 @@
+.sprite-animation {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: transparent;
+  contain: layout paint;
+  transition: transform 420ms ease;
+}
+
+.sprite-animation-sheet {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: auto;
+  height: 100%;
+  max-width: none;
+  user-select: none;
+  pointer-events: none;
+  image-rendering: auto;
+  will-change: transform;
+  transition: filter 220ms ease;
+}
+
+.sprite-gallery-card:hover .sprite-animation {
+  transform: scale(1.06);
+}
+
+.gallery-item-zoom-only:hover .sprite-animation {
+  transform: scale(1.08);
+}
+
+.gif-home-section .sprite-animation {
+  height: 100%;
+  aspect-ratio: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sprite-animation-sheet {
+    transform: none !important;
+  }
+}

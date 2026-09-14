@@ -1,0 +1,17 @@
+node_modules/
+dist/
+
+# Local build output and logs
+buildlog.txt
+
+# Source videos kept locally; the app uses the converted MP4 files
+public/**/*.avi
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# OS metadata
+.DS_Store
+Thumbs.db
